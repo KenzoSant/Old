@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- ==== CSS ==== -->
-    <link rel="stylesheet" href="./assets/css/style5.css">
+    <link rel="stylesheet" href="./assets/css/style8.css">
 
     <title>Portifolio</title>
 </head>
@@ -21,7 +21,7 @@
         <ul class="navigation">
             <li> <a href="#banner" onclick="toggleMenu()">Home</a> </li>
             <li> <a href="#about" onclick="toggleMenu()">Sobre</a> </li>
-            <li> <a href="#port" onclick="toggleMenu()">Portifolio</a> </li>
+            <li> <a href="#port" onclick="toggleMenu()">Portfolio</a> </li>
             <li> <a href="#contact" onclick="toggleMenu()">Contato</a> </li>
         </ul>
     </header>
@@ -30,7 +30,7 @@
     <section class="banner" id="banner">
         <div class="content">
             <p>Eu Sou</p>
-            <h2 class="titleTxt">Kenzo</h2>
+            <h2  data-text="Kenzo">Kenzo</h2>
             <h3>Eu ajudo empresas a desenvolverem os melhores sites</h3>
             <a href="#port" class="btn">Meu Portfólio <span>&#x27F6;</span></a>
         </div>
@@ -46,8 +46,93 @@
                     Desenvolvimento Web e acabei gostando muito, por isso venho estudando e praticando 
                     o mesmo e sempre aprendendo algo novo.<br><br> Meu objetivo é ser um profissional da área de T.I e ser muito bom no que faço para entregar o melhor para o cliente e também conseguir ensinar e ajudar meus colegas de trabalho.
                 </h3>
-            </div>           
+                <br><br>
+            </div>  
+            
+            <div class="row1">
+                <div class="skiil">
+                    <div class="outer">
+                        <div class="inner">
+                            <div class="per" id="number">
+                            </div>
+                        </div>                   
+                    </div>
+    
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                        <defs>
+                           <linearGradient id="GradientColor">
+                              <stop offset="0%" stop-color="#A5AAA4" />
+                              <stop offset="100%" stop-color="#673ab7" />
+                           </linearGradient>
+                        </defs>
+                        <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+                    </svg>
+                </div>  
+    
+                <div class="skiil">
+                    <div class="outer">
+                        <div class="inner">
+                            <div class="per" id="html">
+                            </div>
+                        </div>                   
+                    </div>
+    
+                    <svg  class="circle1" xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                        <defs>
+                           <linearGradient id="GradientColor">
+                              <stop offset="0%" stop-color="#A5AAA4" />
+                              <stop offset="100%" stop-color="#673ab7" />
+                           </linearGradient>
+                        </defs>
+                        <circle cx="80" cy="80" r="70" stroke-linecap="round"  />
+                    </svg>
+                </div> 
+    
+                <div class="skiil">
+                    <div class="outer">
+                        <div class="inner">
+                            <div class="per"id="js">
+                            </div>
+                        </div>                   
+                    </div>
+    
+                    <svg class="circle2" xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                        <defs>
+                           <linearGradient id="GradientColor">
+                              <stop offset="0%" stop-color="#A5AAA4" />
+                              <stop offset="100%" stop-color="#673ab7" />
+                           </linearGradient>
+                        </defs>
+                        <circle cx="80" cy="80" r="70" stroke-linecap="round"  />
+                    </svg>
+                </div> 
+
+                <div class="skiil">
+                    <div class="outer">
+                        <div class="inner">
+                            <div class="per"id="c">
+                            </div>
+                        </div>                   
+                    </div>
+    
+                    <svg class="circle3" xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                        <defs>
+                           <linearGradient id="GradientColor">
+                              <stop offset="0%" stop-color="#A5AAA4" />
+                              <stop offset="100%" stop-color="#673ab7" />
+                           </linearGradient>
+                        </defs>
+                        <circle cx="80" cy="80" r="70" stroke-linecap="round"  />
+                    </svg>
+                </div>
+
+            </div>
+
+
+            
+
         </div>
+
     </section>
 
     <!-- ==== SECTION PORTIFOLIO ==== -->
@@ -112,9 +197,9 @@
                 <h3>
                     Muito obrigado por chegar no final e espero que tenha gostado,<br>tem interesse em trabalhar comigo? me mande uma mensagem.
                 </h3>
-                <a href="mailto:MateusKenzo_Santos@hotmail.com"><ion-icon name="mail-outline"></ion-icon></a>
-                <a href="https://github.com/KenzoSant"><ion-icon name="logo-github"></ion-icon></a>
-                <a href="https://www.linkedin.com/in/mateus-kenzo-dos-santos"><ion-icon name="logo-linkedin"></ion-icon></a>
+                <a href="mailto:MateusKenzo_Santos@hotmail.com" target="_blank" ><ion-icon name="mail-outline"></ion-icon></a>
+                <a href="https://github.com/KenzoSant" target="_blank" ><ion-icon name="logo-github"></ion-icon></a>
+                <a href="https://www.linkedin.com/in/mateus-kenzo-dos-santos" target="_blank" ><ion-icon name="logo-linkedin"></ion-icon></a>
             </div>               
         </div>
     </section>
@@ -124,7 +209,7 @@
     </div>
     
 
-    <script src="./assets/js/main2.js"></script>
+    <script src="./assets/js/main3.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     
 </body>

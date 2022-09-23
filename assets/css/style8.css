@@ -28,13 +28,9 @@
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
 }
-p{
-    font-weight: var(--font-normal);
-    color: var(--primary-color-dark);
-}
 
 section{
-    padding: 75px;
+    padding: 100px;
 }
 
 /* ==== HEADER==== */
@@ -54,7 +50,7 @@ header{
 
 header.sticky{
     background: var(--primary-color);
-    padding: 10px 100px;
+    padding: 8px 90px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.130);
 }
 
@@ -88,7 +84,7 @@ header .navigation li a{
     text-decoration: none;
     color: var(--primary-color);
     font-weight: var(--font-normal);
-    position: relative
+    position: relative;
 }
 
 header.sticky li a{
@@ -125,6 +121,7 @@ ul li a:hover::after{
     justify-content: center;
     align-items: center;
     background: url('../img/background.jpg');
+    background-attachment: fixed;
     background-size: cover;
 }
 
@@ -134,17 +131,20 @@ ul li a:hover::after{
 }
 
 .banner .content h2{
-    font-size: 8em;
+    font-size: 7rem;
     color: var(--primary-color);
 }
+
+
+
 .banner .content h3{
-    font-size: 30px;
+    font-size: 28px;
     font-weight: 500;
     color: var(--primary-color);
 }
 
 .banner .content p{
-    font-size: 40px;
+    font-size: 35px;
     font-weight: var(--font-semi-bold);
     color: var(--primary-color);
 }
@@ -167,6 +167,7 @@ ul li a:hover::after{
     border: 2px solid var(--primary-color);
     background: var(--second-color-dark);
     color: var(--primary-color);
+    letter-spacing: 3px;
 }
 
 .social-icons {
@@ -174,16 +175,10 @@ ul li a:hover::after{
     right: 6.5%;
     bottom: 8%;
 }
-.social-icons ion-icon{
-    font-size: 35px;
-    display: block;
-    margin: 30px 5px;
-    color: var(--second-color);
-}
 
 /* ==== SECTION ABOUT ==== */
 .about{
-    background-color: #4c4b4e;
+    background-color: var(--grey-color-dark);
     position: relative;
     width: 100%;
     min-height: 100vh;
@@ -198,7 +193,7 @@ ul li a:hover::after{
 }
 
 .row .col50 p{
-    font-size: 40px;
+    font-size: 35px;
     font-weight: var(--font-semi-bold);
     color: var(--primary-color);
 }
@@ -220,10 +215,128 @@ ul li a:hover::after{
     color: var(--primary-color);
 }
 
+.row1{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.skiil{
+    width: 160px;
+    height: 160px;
+    position: relative;
+    margin: 0 25px 0 25px;
+}
+
+.outer{
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    border: 1px solid var(--grey-color-dark);
+    padding: 20px;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                -6px -6px 10px -1px rgba(68, 67, 67, 0.7);
+}
+
+.inner{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    border: 1px solid var(--grey-color-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+                inset -4px -4px 6px -1px rgba(68, 67, 67, 0.7),
+                -0.5px -0.5px 0px rgba(68, 67, 67, 1),
+                0.5px 0.5px 0px rgba(0,0,0,0.15),
+                0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+}
+
+.per{
+    color: var(--primary-color);
+    justify-content: center;
+}
+
+.per span{
+    font-size: 25px;
+}
+.per h1{
+    text-align: center;
+    font-size: 20px;
+}
+
+circle{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: anim 2s linear forwards;
+}
+
+.circle1 circle{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: anim1 2s linear forwards;
+}
+
+.circle2 circle{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: anim2 2s linear forwards;
+}
+
+.circle3 circle{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: anim3 2s linear forwards;
+}
+
+svg{
+    position: absolute;
+    top: 1px;
+    left: 1px;
+}
+
+@keyframes anim {
+    100%{
+        stroke-dashoffset: 255;
+    }
+}
+
+@keyframes anim1 {
+    100%{
+        stroke-dashoffset: 141;
+    }
+}
+
+@keyframes anim2 {
+    100%{
+        stroke-dashoffset: 330;
+    }
+}
+
+@keyframes anim3 {
+    100%{
+        stroke-dashoffset: 188;
+    }
+}
+
 
 /* ==== SECTION PORTIFOLIO ==== */
 .portifolio{
-    background-color: #A5AAA4;
+    background-color: var(--grey-color);
 }
 
 .title{
@@ -235,7 +348,7 @@ ul li a:hover::after{
 }
 
 .portifolio .title p{
-    font-size: 40px;
+    font-size: 35px;
     font-weight: var(--font-semi-bold);
     color: var(--primary-color);
 }
@@ -256,7 +369,7 @@ ul li a:hover::after{
 }
 
 .portifolio .content .box{
-    width: 450px;
+    width: 430px;
     margin: 20px;
     border: 18px solid var(--grey-color);
     box-shadow: 0 5px 35px rgba(0, 0, 0, 0.322);
@@ -290,69 +403,27 @@ ul li a:hover::after{
 /* ==== SECTION CONTACT ==== */
 
 .contact{
+    background-color: var(--grey-color-dark);
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.contactForm{
-    padding: 75px 50px;
-    background: var(--primary-color);
-    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.192);
-    max-width: 500px;
-    margin-top: 50px;
-}
-
-.contactForm h3{
-    color: var(--primary-color-dark);
-    font-size: 1.2em;
-    margin-bottom: 20px;
-    font-weight: var(--font-medium);
-}
-
-.contactForm .inputBox{
-    position: relative;
-    width: 100%;
-    margin-bottom: 20px;
-}
-
-.contactForm .inputBox input,
-.contactForm .inputBox textarea{
-    width: 100%;
-    border: 1px solid var(--second-color);
-    padding: 10px;
-    color: var(--primary-color-dark);
-    outline: none;
-    font-size: 16px;
-    font-weight: var(--font-normal);
-    resize: none;
-}
-
-.contactForm .inputBox input[type="submit"]{
-    font-size: var(--font-size-small);
+.col50 ion-icon{
+    padding-top: 20px;
+    margin: 10px;
+    font-size: 35px;
     color: var(--primary-color);
-    background: var(--second-color);
-    display: inline-block;
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: 2px;
-    transition: .5s;
-    max-width: 100px;
-    font-weight: var(--font-medium);
-    cursor: pointer;
-    transform: .3s;
-}
-
-.contactForm .inputBox input[type="submit"]:hover{
-    letter-spacing: 5px;
-    background: var(--second-color-dark);
 }
 
 
 /* ==== COPYRIGHT ==== */
 
 .copyrightTxt{
+    background: var(--grey-color-dark);
     padding: 8px 40px;
     border-top: 1px solid var(--second-color);
     text-align: center;
@@ -375,6 +446,7 @@ ul li a:hover::after{
         padding: 10px 20px;
     }
 
+
     header .icon{
         color: var(--primary-color);
     }
@@ -392,7 +464,7 @@ ul li a:hover::after{
         height: calc(100% - 65px);
         position: fixed;
         top: 65px;
-        left: 0;
+        left: 0px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -438,11 +510,6 @@ ul li a:hover::after{
         padding: 20px;
     }
 
-    .banner .content h2{
-        font-size: 3em;
-        color: var(--primary-color);
-    }
-
     .row{
         flex-direction: column;
     }
@@ -457,15 +524,23 @@ ul li a:hover::after{
         margin-top: 20px;
     }
 
-    .menu .content{
+    .row1 .skiil{
+        margin: 10px 10px 10px 10px;
+    }
+
+    .titleTxt{
+        font-size: 4rem;
+    }
+
+    .portifolio .content{
         margin-top: 20px;
     }
 
-    .menu .content .box{
+    .portifolio  .content .box{
         margin: 10px;
     }
 
-    .menu .content .box .imgBox{
+    .portifolio .content .box .imgBox{
         height: 260px;
     }
 
@@ -473,17 +548,12 @@ ul li a:hover::after{
         text-align: center;
     }
 
-    .opinions .content .box {
-        margin: 10px;
-        padding: 20px;
-    }
-
 }
 
 @media (max-width: 480px){
 
     .banner .content h2{
-        font-size: 2.2em;
+        font-size: 4rem;
         color: var(--primary-color);
     }
 }
