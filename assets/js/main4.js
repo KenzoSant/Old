@@ -3,7 +3,9 @@
 window.addEventListener('scroll', function(){
     const header = document.querySelector('header');
     header.classList.toggle("sticky", window.scrollY > 0);
+
 })
+
 
 function toggleMenu(){
     const menuToggle = document.querySelector('.menuToggle');
@@ -48,7 +50,7 @@ setInterval(() => {
 
 setInterval(() => {
 
-    if(counter2 == 20){
+    if(counter2 == 35){
         clearInterval();
     }
     else{
@@ -56,7 +58,7 @@ setInterval(() => {
         number2.innerHTML =  "<h1><span>JS</span><br>"+counter2+"%</h1>";
     }
 
-}, 100);
+}, 56);
 
 setInterval(() => {
 

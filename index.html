@@ -6,15 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- ==== CSS ==== -->
-    <link rel="stylesheet" href="./assets/css/style8.css">
+    <link rel="stylesheet" href="./assets/css/style10.css">
 
-    <title>Portifolio</title>
+    <title>Portfolio</title>
 </head>
 <body>
 
     <!-- ==== HEADER ==== -->
     <header>
-        <a href="#banner" class="logo"> <span>▪</span>KZ</a>
+        
+        <a href="#banner" class="logo"> 
+            <div class="logo-name"><span>▪ </span>Kenzo</div>
+            <div id="slide" class="wrapper">
+                <ul class="dynamic-txts">
+                    <li><span>Kenzo</span></li>
+                    <li><span>Desenvolvedor</span></li> 
+                    <li><span>Front-End</span></li> 
+                </ul>  
+            </div>  
+        </a>
+        
         <div class="menuToggle" onclick="toggleMenu()">
             <ion-icon class="icon" name="menu-outline"></ion-icon>
         </div>
@@ -30,7 +41,7 @@
     <section class="banner" id="banner">
         <div class="content">
             <p>Eu Sou</p>
-            <h2  data-text="Kenzo">Kenzo</h2>
+            <h2  data-text="Kenzo">Kenzo</h2> 
             <h3>Eu ajudo empresas a desenvolverem os melhores sites</h3>
             <a href="#port" class="btn">Meu Portfólio <span>&#x27F6;</span></a>
         </div>
@@ -41,7 +52,7 @@
         <div class="row">
             <div class="col50">
                 <p>O Meu</p>
-                <h2 class="titleTxt"><span>S</span>obre </h2>
+                <h2 class="titleTxt"><span>S</span>obre</h2>
                 <h3>Cursei Téc de Informática por 3 anos e durante meu TCC me aprofundei em
                     Desenvolvimento Web e acabei gostando muito, por isso venho estudando e praticando 
                     o mesmo e sempre aprendendo algo novo.<br><br> Meu objetivo é ser um profissional da área de T.I e ser muito bom no que faço para entregar o melhor para o cliente e também conseguir ensinar e ajudar meus colegas de trabalho.
@@ -58,7 +69,7 @@
                         </div>                   
                     </div>
     
-                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                    <svg class="circle" xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
                         <defs>
                            <linearGradient id="GradientColor">
                               <stop offset="0%" stop-color="#A5AAA4" />
@@ -209,7 +220,7 @@
     </div>
     
 
-    <script src="./assets/js/main3.js"></script>
+    <script src="./assets/js/main4.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     
 </body>

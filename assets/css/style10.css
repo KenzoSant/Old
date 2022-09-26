@@ -54,19 +54,66 @@ header.sticky{
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.130);
 }
 
-header .logo{
+header .logo {
     color: var(--primary-color);
     font-weight: var(--font-semi-bold);
     font-size: var(--font-size-medium);
     text-decoration: none;
 }
 
-header.sticky .logo{
+header .logo span{
+    color: var(--second-color);
+}
+
+header.sticky .logo-name{
+    display: none;
+}
+
+
+.wrapper .dynamic-txts{
+    display: none;
+}
+
+.sticky .wrapper .dynamic-txts{
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    overflow: hidden;
+}
+
+.sticky .dynamic-txts li{
+    list-style: none;  
+    top: 0;
+    position: relative;
+    animation: slide 6s steps(3) infinite;
+}
+
+@keyframes slide {
+    100%{
+        top: -150px;
+    }
+}
+
+.sticky .dynamic-txts li span{
+    position: relative;
     color: var(--primary-color-dark);
 }
 
-header .logo span{
-    color: var(--second-color);
+.sticky .dynamic-txts li span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--primary-color);
+    border-left: 2px solid var(--primary-color-dark); 
+    animation: typing 2s steps(10) infinite;
+}
+@keyframes typing {
+    100%{
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
 }
 
 header .navigation{
@@ -135,8 +182,6 @@ ul li a:hover::after{
     color: var(--primary-color);
 }
 
-
-
 .banner .content h3{
     font-size: 28px;
     font-weight: 500;
@@ -175,6 +220,7 @@ ul li a:hover::after{
     right: 6.5%;
     bottom: 8%;
 }
+
 
 /* ==== SECTION ABOUT ==== */
 .about{
@@ -227,6 +273,11 @@ ul li a:hover::after{
     height: 160px;
     position: relative;
     margin: 0 25px 0 25px;
+    transition: all .2s ;
+}
+
+.skiil:hover{
+    transform: scale(1.1);
 }
 
 .outer{
@@ -267,7 +318,7 @@ ul li a:hover::after{
     font-size: 20px;
 }
 
-circle{
+.circle circle{
     fill: none;
     stroke: url(#GradientColor);
     stroke-width: 20px;
@@ -303,6 +354,7 @@ circle{
     animation: anim3 2s linear forwards;
 }
 
+
 svg{
     position: absolute;
     top: 1px;
@@ -323,7 +375,7 @@ svg{
 
 @keyframes anim2 {
     100%{
-        stroke-dashoffset: 330;
+        stroke-dashoffset: 306;
     }
 }
 
