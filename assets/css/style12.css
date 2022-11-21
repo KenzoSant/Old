@@ -233,7 +233,6 @@ ul li a:hover::after{
     align-items: center;
 }
 
-
 .row .col50{
     max-width: 900px;
     text-align: center;
@@ -262,12 +261,16 @@ ul li a:hover::after{
     color: var(--primary-color);
 }
 
-.row1{
+#abil{
+    display: none;
+}
+
+#abil.row1{
     display: flex;
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
-}
+}   
 
 .skiil{
     width: 160px;

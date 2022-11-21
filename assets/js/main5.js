@@ -2,7 +2,7 @@
 
 window.addEventListener('scroll', function(){
     const header = document.querySelector('header');
-    header.classList.toggle("sticky", window.scrollY > 50);
+    header.classList.toggle("sticky", window.scrollY > 0);
 
 })
 
@@ -15,7 +15,12 @@ function toggleMenu(){
 }
 
 
-/*
+window.addEventListener('scroll', function(){
+    const row1 = document.getElementById('abil');
+    row1.classList.toggle("row1", window.scrollY > 700);
+    
+})
+
 let number = document.getElementById("number");
 let number1 = document.getElementById("html");
 let number2 = document.getElementById("js");
@@ -73,7 +78,7 @@ setInterval(() => {
     }
 
 }, 33);
-*/ 
+ 
 
 
 
